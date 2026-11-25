@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-functools-cache-lab"
+version = "1.0.0"
+description = "A small CLI lab for functools.lru_cache"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+cache-lab = "cache_lab.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["cache_lab*"]
